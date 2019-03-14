@@ -14,6 +14,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/api/v2', apiv2router);
 app.use('/api', apirouter);
 
-app.listen(port, hostname, () => {
+app.listen(port, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
